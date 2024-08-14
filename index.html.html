@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+    
+    <body class="body">
+        <main class="main">
+          <h2 class="h2">Formulaire d'inscription</h2>
+          <form id="registrationForm" method="POST" class="form">
+            <label for="name" class="label">Nom :</label>
+            <input type="text" id="name" name="name" required class="input">
+            
+            <label for="identifier">Identifiant :</label>
+            <input type="text" id="identifier" name="identifier" required>
+            
+            <label for="email">Adresse email :</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="referential">Référentiel :</label>
+            <select id="referential" name="referential" required>
+              <option value="">Sélectionnez un référentiel</option>
+              <option value="Dev">Dev</option>
+              <option value="Ref">Ref</option>
+            </select>
+            
+            <button type="submit" class="button">S'inscrire</button>
+          </form>
+        </main>
+    </body>
+  </html>
